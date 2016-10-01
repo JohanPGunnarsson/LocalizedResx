@@ -1,0 +1,15 @@
+﻿<Window x:Uid="Window_1" x:Class="LocalizedResx.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="115.6" Width="573"
+        xmlns:res="clr-namespace:LocalizedResx"
+    >
+    <Grid x:Uid="Grid_1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Uid="Label_1" Content="{x:Static res:strings.resString}" HorizontalAlignment="Left" Margin="10,29,0,0" VerticalAlignment="Top" Width="428" Height="36" Grid.Column="1"/>
+        <Button Content="Ok" HorizontalAlignment="Left" Margin="470,31,0,0" VerticalAlignment="Top" Width="86" Click="Button_Click" Grid.Column="1" IsDefault="True" Height="22"/>
+    </Grid>
+</Window>
